@@ -16,10 +16,14 @@ Error: There is already a collection named "links"
 ## To Reproduce
 
 ```bash
-npm run test-app
+# Without rspack - WORKS
+npm run test-no-rspack
+
+# With rspack - FAILS
+npm run test-rspack
 ```
 
-You'll see in the output:
+With rspack, you'll see:
 ```
 [Rspack Build Server] compiled successfully   # <-- Main bundle
 [Rspack Test Server] compiled successfully    # <-- Test bundle (SHOULD NOT EXIST)
